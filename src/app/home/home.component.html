@@ -1,0 +1,31 @@
+<h2>Welcome to {{title}}!</h2>
+<div class="form-container">
+    <div class="row">
+        <div class="col-xs-12">
+            <dynamic-form #dynamicForm [questions]="questions"></dynamic-form>
+        </div>
+    </div>
+</div>
+
+<div class="form-row">
+    <button class="btn btn-primary" type="submit" (click)="onSubmit()">Save</button>
+</div>
+
+<input id="amount" type="text" [ngModel]="amount" (change)="onAmountChange($event)" myNumericFormatter myInputFilter='numericFormatted' />
+
+
+<!-- <div class="form-container">
+    <div class="row">
+        <div class="col-xs-12">
+            <input-numeric [ngModel]="" [id]="id" [label]="label" [placeholder]="placeholder"></input-numeric>      
+        </div>
+    </div>
+</div>
+<p></p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            {{ data | json }}
+        </div>
+    </div>
+</div> -->

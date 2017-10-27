@@ -1,0 +1,5 @@
+<div class="form-group">
+  <label class="form-control-label" for="{{id}}">{{label}}</label>
+  <input #input type="text" class="form-control" id="{{id}}" placeholder="{{placeholder}}"
+    tabindex="0" [(ngModel)]="value" (blur)="onBlur($event)">
+</div>
