@@ -16,6 +16,7 @@ import { ErrorComponent } from './error/error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { ConfigService } from './config.service';
+import { OptionsComponent } from './options/options.component';
 
 export function configServiceFactory(configService: ConfigService): Function {
   return () => configService.load();
@@ -26,7 +27,8 @@ export function configServiceFactory(configService: ConfigService): Function {
     AppComponent,
     HomeComponent,
     ErrorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,

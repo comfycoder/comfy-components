@@ -13,6 +13,7 @@ import { MyNumericFormatterDirective } from './my-numeric-formatter.directive';
 import { MyPercentFormatterDirective } from './my-percent-formatter.directive';
 import { MyNumericPipe } from './my-numeric.pipe';
 import { MyPercentPipe } from './my-percent.pipe';
+import { RadioButtonsComponent } from './radio-buttons/radio-buttons.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { MyPercentPipe } from './my-percent.pipe';
     PageFooterComponent,
     SpinnerComponent,
     InputNumericComponent,
+    RadioButtonsComponent,
     MyCurrencyPipe,
     MyCurrencyFormatterDirective,
     InputFilterDirective,
@@ -38,6 +40,7 @@ import { MyPercentPipe } from './my-percent.pipe';
     PageFooterComponent,
     SpinnerComponent,
     InputNumericComponent,
+    RadioButtonsComponent,
     MyCurrencyPipe,
     MyCurrencyFormatterDirective,
     InputFilterDirective,

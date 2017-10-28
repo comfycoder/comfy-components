@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { OptionsComponent } from './options/options.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,13 @@ const routes: Routes = [
     component: HomeComponent,
     data: {
       title: 'Welcome!'
+    }
+  },
+  {
+    path: 'options',
+    component: OptionsComponent,
+    data: {
+      title: 'Radios Button Example'
     }
   },
   {
@@ -26,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'options',
     pathMatch: 'full'
   },
   {
