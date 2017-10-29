@@ -1,1 +1,13 @@
-<radio-buttons></radio-buttons>
+<div>
+  <form [formGroup]="form" autocomplete="off" novalidate>
+
+    <question-group [question]="question">
+      <rx-radio-button [parent]="form" controlName="food" [options]="options"></rx-radio-button>
+    </question-group>
+
+    <p></p>
+
+    <pre>{{ form.value | json }}</pre>
+
+  </form>
+</div>

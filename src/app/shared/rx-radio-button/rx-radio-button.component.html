@@ -1,0 +1,9 @@
+<div [formGroup]="parent" *ngIf='options'>
+  <div class="radio" *ngFor="let option of options; let i = index">
+    <input [id]="option?.id" type="radio" tabindex="1"
+      [name]="option?.name" formControlName="{{option?.name}}" 
+      [value]="option?.value"
+      [checked]="isChecked(option?.value)">
+    <label [for]="option?.id" class="radio-label">{{option?.caption}}</label>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="modal fade" id="ConfirmDialog" tabindex="-1" role="dialog" 
+  aria-labelledby="confirmeDialogTitle" aria-hidden="true" [ngClass]="{'show': visibleAnimate}"
+  [ngStyle]="{'display': visible ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}" style="display: block;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" #messagecontent>
+        <ng-content select=".app-modal-body"></ng-content>
+        <div class="modal-commands">
+          <button type="button" tabindex="1" class="btn btn-default btn-sm" data-dismiss="modal" (click)="handleCancel()">CANCEL</button>
+          <button type="button" tabindex="1" class="btn btn-primary btn-sm" data-dismiss="modal" (click)="handleOK()">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

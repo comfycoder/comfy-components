@@ -1,0 +1,14 @@
+<div (click)="onContainerClicked($event)" class="modal fade" id="messageDialog" tabindex="-1" role="dialog" 
+  aria-labelledby="messageDialogTitle" aria-hidden="true" [ngClass]="{'show': visibleAnimate}"
+  [ngStyle]="{'display': visible ? 'block' : 'none', 'opacity': visibleAnimate ? 1 : 0}" style="display: block;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" #messagecontent>
+        <ng-content select=".app-modal-body"></ng-content>
+        <div class="modal-commands">
+          <button type="button" tabindex="1" class="btn btn-primary btn-sm" data-dismiss="modal" (click)="hide()">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

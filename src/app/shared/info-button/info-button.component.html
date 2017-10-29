@@ -1,0 +1,6 @@
+<a class="info-button" #infobutton tabindex="1" (click)="showMessage($event)">
+  <i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+<message-dialog #messagedlg>
+  <div class="app-modal-body" [innerHTML]="content"></div>
+</message-dialog>
