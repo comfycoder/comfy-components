@@ -36,7 +36,8 @@ export class OptionsComponent implements OnInit {
 
   populateOptions() {
 
-    this.question = new QuestionInput('food', 'What would you like to eat?', 'Only choose a food item that you are not alergic to.');
+    this.question = new QuestionInput('food', 'What would you like to eat?',
+      'Only choose a food item to which you are not alergic.');
     this.options.push(new OptionItem('beef', 'Beef', 'food', 1, 10, ''));
     this.options.push(new OptionItem('lamb', 'Lamb', 'food', 2, 20, ''));
     this.options.push(new OptionItem('fish', 'Fish', 'food', 3, 30, ''));
